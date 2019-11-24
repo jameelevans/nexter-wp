@@ -1,0 +1,81 @@
+.story {
+
+    &__pictures {
+        background-color: $color-primary;
+        grid-column: full-start / col-end 4;
+        background-image: linear-gradient(rgba($color-primary, .5), rgba($color-primary, .5)), url(assets/img/back.jpg);
+        background-size: cover;
+
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+
+        // Centers image vertically inside grid cell
+        align-items: center;
+
+        @include respond(medium) {
+            grid-column: 1 / -1; 
+            padding: 6rem;
+       }
+    }
+
+    &__img--1 {
+        width: 100%;
+        grid-row: 2 / 6;
+        grid-column: 2 / 6;
+        box-shadow: 0 3rem 5rem rgba(#000, .1);
+
+        @include respond(medium) {
+            grid-column: 1 / 5;
+            grid-row: 1 / -1; 
+
+       }
+    }
+
+    &__img--2 {
+        width: 115%;
+        grid-row: 4 / 6;
+        grid-column: 4 / 7;
+        z-index: 20;
+        box-shadow: 0 3rem 5rem rgba(#000, .2);
+
+        @include respond(medium) {
+            grid-row: 1 / -1; 
+            width: 100%;
+       }
+    }
+
+    &__content {
+        background-color: $color-grey-light-1;
+        grid-column: col-start 5 / full-end;
+        padding: 6rem 8vw;
+
+        // vertical align content with grid
+        display: grid;
+        //Vertically center
+        align-content: center;
+        // Keep items from streching all the way across
+        justify-items: start;
+        
+
+        /* vertical align content with flexbox
+        display: flex;
+        flex-direction: column;
+        // Center items vetically
+        justify-content: center;
+        // Keep items from streching all the way across
+        align-items: flex-start;
+        */
+
+        @include respond(medium) {
+            grid-column: 1 / -1; 
+            grid-row: 5 / 6;
+       }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-bottom: 4rem;
+    }
+}

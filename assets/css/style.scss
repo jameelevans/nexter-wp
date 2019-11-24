@@ -1,0 +1,106 @@
+/*
+Theme Name: Nexter Wordpress Theme
+Author: Jameel Evans
+Theme URI: http://nexter.jameelevans.com
+Author URI: http://jameelevans.com
+Description: This theme was designed and coded by Jameel Evans.
+Version: 1.0
+Text Domain: jameelevans.com
+ */
+
+ /*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+| Abstracts |
+# Variables
+# Mixins
+# Functions
+
+| Base |
+# Typography 
+# Base --> Basic definition of project
+# Animations
+# Utilities
+
+| Components |
+# Buttons
+# Features
+# Gallery
+# Homes
+# Realtors
+# Story
+
+| Layout |
+# Header
+# Sidebar
+# Footer
+# Navigation
+
+| Pages |
+# Home
+
+--------------------------------------------------------------*/
+
+/*--------| Abstracts |--------*/
+
+/* Variables */
+@import "abstracts/variables";
+
+/* Mixins */
+@import "abstracts/mixins";
+
+  /* Functions */
+ // @import "abstracts/functions";
+
+
+/*--------| Base |--------*/
+
+/* Typography */
+@import "base/typography";
+
+/* Global */
+@import "base/base";
+
+/* Animations */
+// @import "base/animations";
+
+/* Utilities */
+@import "base/utilities";
+
+/*--------| Components |--------*/
+
+/* Buttons */
+@import "components/buttons";
+
+/* Features */
+@import "components/features";
+
+/* Gallery */
+@import "components/gallery";
+
+/* Homes */
+@import "components/homes";
+
+/* Realtors */
+@import "components/realtors";
+
+/* Story */
+@import "components/story";
+
+/*--------| Layout |--------*/
+
+/* Header */
+@import "layout/header";
+
+/* Sidebar */
+@import "layout/sidebar";
+
+/* Footer */
+@import "layout/footer";
+
+
+
+
+
+
+/*--------| Pages |--------*/
